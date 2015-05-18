@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title>{{ title }} - microblog</title>
+  </head>
+  <body>
+      <table>
+      <tr><th>Student</th><th>Zadanie</th><th>Ocena</th></tr>
+      {% for ocena in oceny %}
+      <tr><td>{{ocena.student}}</td><td>{{ocena.zadanie}}</td><td>{{ocena.ocena}}</td></tr>
+      {% endfor %} 
+      </table>
+  </body>
+</html>
